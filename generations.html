@@ -5,36 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toyota Supra - Поколения</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="navbar-placeholder"></div>
 
     <div class="container">
-        <h1>Поколения Toyota Supra</h1>
-        
-        <div class="generation">
-            <div class="generation-img" style="background-image: url('images/generations/mk1.jpg');"></div>
-            <div class="generation-info">
-                <h2>Первое поколение (A40/A50) 1978-1981</h2>
-                <p>Первая Supra была разработана на базе Toyota Celica, но имела удлинённую колёсную базу и более мощные двигатели.</p>
-                <ul>
-                    <li>Двигатель: 2.0 л 12R-U</li>
-                    <li>Мощность: 123 л.с.</li>
-                    <li>Привод: задний</li>
-                </ul>
+        <header class="page-header">
+            <h1>Поколения Toyota Supra</h1>
+            <p class="page-subtitle">Эволюция японской легенды с 1978 года по настоящее время</p>
+        </header>
+
+        <div class="generations-grid">
+            <div class="generation-card">
+                <div class="generation-visual">
+                    <div class="generation-img" style="background-image: url('images/generations/1.png');"></div>
+                    <div class="generation-badge">MK1</div>
+                </div>
+                <div class="generation-content">
+                    <h2>Первое поколение (A40/A50) 1978-1981</h2>
+                    <p>Первая Supra была разработана на базе Toyota Celica, но имела удлинённую колёсную базу и более мощные двигатели.</p>
+                    <ul class="specs-list">
+                        <li><strong>Двигатель:</strong> 2.0 л 12R-U</li>
+                        <li><strong>Мощность:</strong> 123 л.с.</li>
+                        <li><strong>Привод:</strong> задний</li>
+                        <li><strong>Особенности:</strong> отделка Celica Supra</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="generation-card">
+                <div class="generation-visual">
+                    <div class="generation-img" style="background-image: url('images/generations/2.png');"></div>
+                    <div class="generation-badge">MK2</div>
+                </div>
+                <div class="generation-content">
+                    <h2>Второе поколение (A60) 1981-1986</h2>
+                    <p>Supra отделилась от Celica и стала самостоятельной моделью с полностью независимой подвеской и улучшенной аэродинамикой.</p>
+                    <ul class="specs-list">
+                        <li><strong>Двигатель:</strong> 2.8 л 5M-GE</li>
+                        <li><strong>Мощность:</strong> 145-160 л.с.</li>
+                        <li><strong>Привод:</strong> задний</li>
+                        <li><strong>Инновации:</strong> первая самостоятельная модель</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="generation-card">
+                <div class="generation-visual">
+                    <div class="generation-img" style="background-image: url('images/generations/3.png');"></div>
+                    <div class="generation-badge">MK3</div>
+                </div>
+                <div class="generation-content">
+                    <h2>Третье поколение (A70) 1986—1993</h2>
+                    <p>Полностью переработанная модель с аэродинамическим дизайном и технологическими инновациями, включая турбонаддув.</p>
+                    <ul class="specs-list">
+                        <li><strong>Двигатель:</strong> 3.0 л 7M-GTE</li>
+                        <li><strong>Мощность:</strong> 230-276 л.с.</li>
+                        <li><strong>Привод:</strong> задний</li>
+                        <li><strong>Особенности:</strong> первый турбированный двигатель</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="generation-card">
+                <div class="generation-visual">
+                    <div class="generation-img" style="background-image: url('images/generations/4.png');"></div>
+                    <div class="generation-badge">MK4</div>
+                </div>
+                <div class="generation-content">
+                    <h2>Четвертое поколение (A80) 1993—2002</h2>
+                    <p>Легендарная модель с культовым дизайном и двигателем 2JZ, ставшая иконой в автомобильной культуре и фильме "Форсаж".</p>
+                    <ul class="specs-list">
+                        <li><strong>Двигатель:</strong> 3.0 л 2JZ-GTE</li>
+                        <li><strong>Мощность:</strong> 320-330 л.с.</li>
+                        <li><strong>Привод:</strong> задний</li>
+                        <li><strong>Легенда:</strong> двигатель 2JZ с огромным потенциалом</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="generation-card">
+                <div class="generation-visual">
+                    <div class="generation-img" style="background-image: url('images/generations/5.png');"></div>
+                    <div class="generation-badge">MK5</div>
+                </div>
+                <div class="generation-content">
+                    <h2>Пятое поколение (A90) с 2019</h2>
+                    <p>Современное возрождение легенды, разработанное совместно с BMW, сочетающее японский дизайн с немецкими технологиями.</p>
+                    <ul class="specs-list">
+                        <li><strong>Двигатель:</strong> 3.0 л B58 турбо</li>
+                        <li><strong>Мощность:</strong> 340-387 л.с.</li>
+                        <li><strong>Привод:</strong> задний</li>
+                        <li><strong>Особенности:</strong> совместная разработка с BMW</li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <div class="generation">
-            <div class="generation-img" style="background-image: url('images/generations/mk2.jpg');"></div>
-            <div class="generation-info">
-                <h2>Второе поколение (A60) 1981-1986</h2>
-                <p>Supra отделилась от Celica и стала самостоятельной моделью с полностью независимой подвеской.</p>
-                <!-- TODO -->
-            </div>
-        </div>
-
-        <!-- TODO продолжить -->
     </div>
 
     <script src="scripts/components/navigation.js"></script>
