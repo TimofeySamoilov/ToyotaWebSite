@@ -1052,3 +1052,459 @@ body {
     background: var(--primary-color);
     transform: scale(1.2);
 }
+
+
+
+
+/* Стили для раздела характеристик */
+.specifications-section {
+    padding: 40px 0;
+}
+
+.generation-selector {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.spec-btn {
+    padding: 14px 28px;
+    border: 2px solid #e10600;
+    background: white;
+    color: #e10600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.spec-btn:hover {
+    background: #e10600;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(225, 6, 0, 0.25);
+}
+
+.spec-btn.active {
+    background: #e10600;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(225, 6, 0, 0.3);
+}
+
+.gen-specs {
+    display: none;
+    animation: fadeInUp 0.6s ease;
+}
+
+.gen-specs.active {
+    display: block;
+}
+
+.specs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.specs-header h2 {
+    margin: 0;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.specs-table-container {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.specs-table-container h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #e10600;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.specs-table th {
+    background: #e10600;
+    color: white;
+    font-weight: 600;
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.specs-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+}
+
+.specs-table tr:hover {
+    background: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+.specs-table td:first-child {
+    font-weight: 500;
+    color: #333;
+}
+
+.additional-specs {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    height: fit-content;
+}
+
+.additional-specs h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #e10600;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specs-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.specs-list li:last-child {
+    border-bottom: none;
+}
+
+.specs-list strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .generation-selector {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+    }
+    
+    .spec-btn {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 8px;
+        padding: 12px 20px;
+    }
+    
+    .specs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .specs-table-container,
+    .additional-specs {
+        padding: 20px;
+    }
+    
+    .specs-table th,
+    .specs-table td {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .specs-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .specifications-section {
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .specifications-section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .specs-grid {
+        gap: 50px;
+    }
+}
+
+
+
+
+/* ===== СТИЛИ ДЛЯ РАЗДЕЛА ХАРАКТЕРИСТИК ===== */
+
+.specifications-section {
+    padding: 4rem 0;
+}
+
+.generation-selector {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.spec-btn {
+    padding: 14px 28px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--text-primary);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.spec-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 6, 0, 0.25);
+}
+
+.spec-btn.active {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(230, 6, 0, 0.3);
+}
+
+.gen-specs {
+    display: none;
+    animation: fadeInUp 0.6s ease;
+}
+
+.gen-specs.active {
+    display: block;
+}
+
+.specs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--medium-gray);
+}
+
+.specs-header h2 {
+    margin: 0;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.generation-badge {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.specs-table-container {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--medium-gray);
+}
+
+.specs-table-container h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.specs-table th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.specs-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--medium-gray);
+    font-size: 15px;
+    color: var(--text-primary);
+}
+
+.specs-table tr:hover {
+    background: var(--dark-gray);
+    transition: background-color 0.2s ease;
+}
+
+.specs-table td:first-child {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.additional-specs {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--medium-gray);
+    height: fit-content;
+}
+
+.additional-specs h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specs-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--medium-gray);
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-primary);
+}
+
+.specs-list li:last-child {
+    border-bottom: none;
+}
+
+.specs-list strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .generation-selector {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+    }
+    
+    .spec-btn {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 8px;
+        padding: 12px 20px;
+    }
+    
+    .specs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .specs-table-container,
+    .additional-specs {
+        padding: 20px;
+    }
+    
+    .specs-table th,
+    .specs-table td {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .specs-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .specifications-section {
+        padding: 20px 0;
+    }
+}
